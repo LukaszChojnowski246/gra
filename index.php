@@ -2,22 +2,12 @@
  
 session_start();
 
- if (isset($_SESSION["monety"])) {
-
- }
-
-
-
-
-
-$_SESSION["monety"] = 40;
-$random = round(1, 3);
-
-if ($_SESSION["monety"] < 0) {
-    echo "Przegrałeś nie masz monet";
+    $_SESSION["monety"] = 40;
+    
     
 
-}
+
+
 ?>
 
 
@@ -33,27 +23,30 @@ if ($_SESSION["monety"] < 0) {
 <body>
     <Main>
     <section id="srodek">
-    <input type="number">
-    <h1>Monety = </h1>
-    <form method="post">
-        <input type="button" value="Przycisk 1">
-    </form>
-    <form method="post">
-        <input type="button" value="Przycisk 2">
-    </form>
-    <form method="post">
-        <input type="button" value="Przycisk 3">
-    </form>
-    
         
-    
-    
-    
+        <input type="number" >
+        
+    <p>monety = <?php echo $_SESSION["monety"] ?></p>
+        <form action="" method="post1">
+            <button type="button" id="przycisk1" class="cos">
+                kubek 1
+            </button>
+        </form>
+
+        <form action="" method="post2">
+            <button type="button" id="przycisk2" class="cos2">
+                kubek 2
+            </button>
+        </form>
+
+    <form action="" method="post3">
+        <button type="button" id="przycisk3" class="cos3">
+            kubek 3
+        </button>
+    </form>
 
     </section>
     </Main>
 
 </body>
 </html>
-
-
